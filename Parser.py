@@ -668,6 +668,7 @@ def desc_rec_proc(codigo_fuente):
         caracter_actual = datos_locales['lista_tokens'][datos_locales['index']][0]
         if caracter_actual in SD[no_terminal].keys():
             ladoderecho=SD[no_terminal][caracter_actual]
+            print(f"{no_terminal} --> {ladoderecho}")
             procesar(ladoderecho)  
         else:
             datos_locales['error'] = True
