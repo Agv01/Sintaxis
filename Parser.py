@@ -676,7 +676,6 @@ def desc_rec_proc(codigo_fuente):
 
     def procesar(cuerpo_produccion):
         for simbolo in cuerpo_produccion:
-            print(f"{simbolo} -->")
             caracter_actual = datos_locales['lista_tokens'][datos_locales['index']][0]
             #lexema_actual = datos_locales['lista_tokens'][datos_locales['index']][1]
             datos_locales['error'] = False
